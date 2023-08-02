@@ -8,6 +8,10 @@ const ingredients = [
 ];
 const list = document.querySelector("#ingredients");
 
+console.log(list);
 for (let i = 0; i < ingredients.length; i++) {
-  const newElementList = list.createElement("li");
+  const newElementList = document.createElement("li");
+  newElementList.textContent = ingredients[i];
+  newElementList.classList.add("item");
+  list.append(newElementList);
 }
