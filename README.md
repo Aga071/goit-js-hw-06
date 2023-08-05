@@ -1,1 +1,1 @@
-# goit-js-hw-06
+https://aga071.github.io/goit-js-hw-06/
