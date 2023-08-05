@@ -1,8 +1,7 @@
 const inputPassword = document.querySelector("#validation-input");
-const lengthImput = document.querySelector('input[data-length="6"]');
 
 inputPassword.addEventListener("blur", (e) => {
-  if (e.currentTarget.value.length === parseInt(lengthImput.dataset.length)) {
+  if (e.currentTarget.value.length === parseInt(inputPassword.dataset.length)) {
     inputPassword.classList.add("valid");
     inputPassword.classList.remove("invalid");
   } else {
