@@ -5,7 +5,9 @@ formLogin.addEventListener("submit", (e) => {
   e.preventDefault();
   const { email, password } = e.currentTarget.elements;
   if (email.value !== "" && password.value !== "") {
-    newObj.push;
+    newObj[email.name] = email.value;
+    newObj[password.name] = password.value;
+    console.log(newObj);
   } else {
     alert("All fields should be completed!!!");
   }
